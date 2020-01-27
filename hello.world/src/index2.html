@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>world</title>
+    <link rel="stylesheet" href="/world.css">
+  </head>
+  <body>
+    <nav>
+      <h1>world</h1>
+    </nav>
+    <div class="content">
+      <h2>Content appears in the following box:</h2>
+      <p>... replacing whatever is defined in the <code>app</code> page element in <code>src/index.html</code> when Javascript runs.</p>
+      <div id="app">Loading ClojureScript...</div>
+      <p>The page is also updated when the Clojurescript code changes.</p>
+      <p>Specifically, the <code>reload</code> function inside <code>src/hello/world/frontend/main.cljs</code> is registered to run then.</p>
+      <p>Changes to <code>src/index.html</code> don't trigger code reloading, so the browser page needs to be reloaded to see changes there.</p>
+      <p>What about changes to the Clojure code, or the EDN file defining the project?  Well, those can be brought in with <code>(reset)</code> on the REPL.</p>
+      <p><a href="https://juxt.pro/edge/docs/index.html">Learn Edge</a></p>
+    </div>
+    <script src="/frontend.js"></script>
+  </body>
+</html>
